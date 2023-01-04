@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,j,r,c,a[10][10],b[10][10],h,e;
+    scanf("%d%d",&r,&c);
+    for(i=0;i<r;i++){
+        for(j=0;j<c;j++){
+            scanf("%d",&a[i][j]);
+            b[i][j]=a[i][j];
+        }
+    }
+    
+for(i=0;i<r;i++){
+        for(j=0;j<c;j++){
+            if(a[i][j]==0)
+            {
+                
+                for(h=0;h<r;h++){
+                    b[h][j]=0;
+                    printf("%d",b[h][j]);
+                }
+                for(e=0;e<c;e++){
+                    b[i][e]=0;
+                }
+                    
+                    
+                }
+            }
+   
+        }
+ 
+ for(i=0;i<r;i++){
+     printf("\n");
+        for(j=0;j<c;j++){
+            printf("%d ",b[i][j]);
+        }
+ }
+ 
+   
+    return 0;
+}
+
